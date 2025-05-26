@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional(readOnly = true)
-    public List<User> showAllUsers() {
+    public List<User> findAllUsers() {
         return userDAO.findAllUsers();
     }
 }
