@@ -24,7 +24,7 @@ public class UserController {
     }
 
     @GetMapping("/")
-    public String showAllUsers(Model model) {
+    public String findAllUsers(Model model) {
         List<User> allUsers = userService.findAllUsers();
         model.addAttribute("users", allUsers);
         return "index";
